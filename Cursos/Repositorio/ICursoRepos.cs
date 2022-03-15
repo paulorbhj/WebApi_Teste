@@ -8,6 +8,7 @@ namespace Cursos.Repositorio
 {
     public interface ICursoRepos
     {
+        //Interface da cursorepos
         Task<IEnumerable<Curso>> Get();
         Task<Curso> Create(Curso curso);
         Task<Curso> Delete(int IdCurso);

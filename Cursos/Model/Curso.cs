@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Cursos.Model
 {
+    // O código abaixo é usado para indicar ao visual studio que ele tem que encontrar uma tabela no banco de dados de nome Curso
     [Table("Curso")]
     public class Curso
     {

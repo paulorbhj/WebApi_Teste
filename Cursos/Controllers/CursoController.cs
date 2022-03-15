@@ -25,7 +25,7 @@ namespace Cursos.Controllers
         {
             return await _CursoRepos.Get();
         }
-
+        //O código abaixo desta linha exibe na tela o atributo IdCurso
         [HttpGet("{IdCurso}")]
         public async Task<ActionResult<Curso>> Get(int IdCurso)
         {

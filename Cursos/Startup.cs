@@ -29,7 +29,9 @@ namespace Cursos
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // O código abaixo foi construido para fazer a conexão com o banco de dados(A cscontext foi criada na pasta Model)
             services.AddDbContext<CsContext>(option => option.UseSqlServer(Configuration.GetConnectionString("CsContext")));
+            //O código abaixo usa os parametros da pasta repositorio. Ele verifica se já existe uma seção ativa. Se existe, mantém
             services.AddTransient<ICursoRepos, CursoRepos>();
             services.AddControllers();
             services.AddSwaggerGen(c =>

@@ -9,7 +9,10 @@ namespace Cursos.Repositorio
 {
     public class CursoRepos : ICursoRepos
     {
+        //O código abaixo é utilizado para chamar a classe de conexao com o banco
         public readonly CsContext _ctx;
+
+        //O construtor abaixo é usado para instanciar a objeto de conexao 
         public CursoRepos(CsContext context)
         {
             _ctx = context;
